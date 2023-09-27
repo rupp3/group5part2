@@ -1,0 +1,42 @@
+{
+  "name": "ece461-cli",
+  "version": "1.0.0",
+  "description": "Retrieve metrics on npm modules hosted on GitHub",
+  "main": "dist/index.js",
+  "bin": {
+    "./run": "run"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node run",
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasmiins/ece461-npm-module-metrics.git"
+  },
+  "author": "",
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/yasmiins/ece461-npm-module-metrics/issues"
+  },
+  "homepage": "https://github.com/yasmiins/ece461-npm-module-metrics#readme",
+  "dependencies": {
+    "@octokit/graphql": "^7.0.1",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.6.0",
+    "isomorphic-git": "^1.24.5",
+    "reflect-metadata": "^0.1.13",
+    "tslog": "^4.9.2",
+    "tsyringe": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.7",
+    "jest": "^29.7.0",
+    "node-fetch": "^3.3.2",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
